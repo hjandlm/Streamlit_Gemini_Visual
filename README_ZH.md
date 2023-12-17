@@ -12,18 +12,18 @@
 
 ## 2. 参数设置
 
-#### 2.1 select gemini model
+#### 2.1 Select gemini model
 
 - Gemini Pro
 - Gemini Pro Vision
 
-#### 2.3 select conversation turn
+#### 2.3 Select conversation turn
 
 - Single-turn Conversation
 
 - Multi-turn Conversation
 
-#### 2.3 safety settings
+#### 2.3 Safety settings
 
 - Harassment
 
