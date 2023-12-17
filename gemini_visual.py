@@ -153,7 +153,7 @@ if __name__=="__main__":
                     st.image(image, use_column_width=True)
                 except Exception:
                     st.markdown(message["content"])
-        if user_query := st.chat_input("请输入内容..."):
+        if user_query := st.chat_input("Please enter content......"):
             with st.chat_message("user", avatar=user_avator):
                 if not st.session_state.image and image_file is not None:
                     st.session_state.image.append(image_file)
