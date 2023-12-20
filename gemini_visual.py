@@ -89,7 +89,7 @@ def set_config():
 def chat(query,model_name,model_config,api_key,safety_settings,history=None):
     genai.configure(api_key=api_key)
     
-    model = genai.GenerativeModel(model_name=model_name,generation_config=model_config)
+    model = genai.GenerativeModel(model_name=model_name,generation_config=genai.types.GenerationConfig(model_config))
     if history is not None:
         history.append({'role':'user','parts':[query]})
         response = model.generate_content(history, safety_settings=safety_settings)
